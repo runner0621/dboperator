@@ -14,12 +14,6 @@ Browser::Browser(QWidget *parent)
 {
     setupUi(this);
 
-    if (QSqlDatabase::drivers().isEmpty())
-        QMessageBox::information(this, tr("No database drivers found"),
-                                 tr("This program requires at least one database driver. "
-                                    "Please check the documentation how to build the "
-                                    "Qt SQL plugins."));
-
     //Init & open database
     mHandlePtr = DbmInit(DBOP_NAME_ORACLE);
     DBOP_CHECK(NULL != mHandlePtr);

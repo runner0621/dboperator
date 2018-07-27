@@ -256,9 +256,9 @@ int DbmDatabaseSearch(const DbHandlerSt* handlePtr,
 
         tableCnt = handlePtr->GetAllTableName(tablesBufPtr, DBM_TABLES_BUF_SIZE);
 #if defined(DBOP_DEBUG_ENABLE)
-        //TODO
+        //Added for test
         //T_D284  11,159,660 rows
-        strcpy(tablesBufPtr, "CHC_JG_GJZWKL,CHC_JG_GLBSL,CHC_JG_ID_CFL,CHC_JG_WYZD_CFL,CHC_JG_ZDCD,TB_DRUG,");
+        //strcpy(tablesBufPtr, "CHC_JG_GJZWKL,CHC_JG_GLBSL,CHC_JG_ID_CFL,CHC_JG_WYZD_CFL,CHC_JG_ZDCD,TB_DRUG,");
         //strcpy(tablesBufPtr, "CHC_JG_GJZWKL,CHC_JG_GLBSL,");
 #endif
         DBOP_LOG(DBOP_LOG_INFO, "Table count:%d, table list:%s", tableCnt, tablesBufPtr);

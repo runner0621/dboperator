@@ -4,6 +4,9 @@
 #include "db_config.h"
 #include "utilities.h"
 
+
+#define  DBOP_INSTANT_CLIENT_PATH   "D:/Program Files (x86)/Oracle/Instant Client/bin"
+
 #if 1
 #define  DBOP_SERVICE_NAME          "192.168.91.98:1521/orcl"
 #define  DBOP_USER_NAME             "cgw_gapc"
